@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: 15px;
+  background: #f6f6fe;
+  text-align: center;
+  background-image: url(images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50% 30%;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-top: 4rem;
+  color: #6d708d;
+}
+
+.toggle-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b3b5c6;
+  font-size: 0.9rem;
+}
+
+.toggle-section p {
+  margin: 0 1.5rem;
+}
+
+.toggle {
+  position: relative;
+  width: 50px;
+  height: 28px;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+}
+
+.toggle-btn {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: white;
+  top: 4px;
+  right: 4px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.cards-wrapper {
+  margin: 5rem 1.5rem;
+  max-width: 500px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #6d708d;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.card p:first-of-type {
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  color: #6d708d;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card button {
+  margin-top: 2rem;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.pro {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+}
+
+.pro .price-wrapper {
+  color: white;
+}
+
+.pro h2 {
+  color: white;
+}
+
+.pro p:first-of-type {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pro p {
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pro button {
+  background: white;
+  color: #696fdd;
+}
+
+.price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+  color: #494c5f;
+}
+
+.price-wrapper span {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.price-wrapper .price {
+  font-size: 4rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 548px) {
+  .cards-wrapper {
+    margin: 5rem auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
+    background-position: top right, bottom left;
+    background-size: unset;
+  }
+  .cards-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1100px;
+    margin: 5rem 1.5rem;
+    margin-bottom: 0;
+  }
+  .card {
+    width: 33.3%;
+    margin-bottom: 0;
+  }
+  .pro {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1148px) {
+  .cards-wrapper {
+    margin: 5rem auto;
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
